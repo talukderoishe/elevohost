@@ -1,562 +1,777 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ElevoHost Page</title>
-   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="css/tailwind.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElevoHost Page</title>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!--any offer 
   <div>
     <h1 class="bg-black text-white text-center">LIMITED-TIME Turbo Hosting DISCOUNT! Up to 30%!</h1>
     <h1 class="bg-black text-red-400 text-center">GET THE DEAL >> </h1>
     </div> -->
-    <!--offer close-->
-    <!--page name-->
-    <div class="bg-gray-300 h-[100px] lg:p-5 ">
-    <h1 class="mx-2 pt-6 tracking-wide text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-500 lg:mx-[90px] ">ElevoHost</h1></div>
-    
-    <!--page name close-->
-    <!--money,login,reg option start-->
-    <div class="bg-gray-300 h-10">
-    <div class=" flex justify lg:ml-[1025px] lg:mb-2 lg:justify-center lg:flex-none " >
-    <select name="bdt" class=" text-blue-400 h-7 bg-gray-200 mx-2 ">
+  <!--offer close-->
+  <!--page name-->
+  <div class="bg-gray-300 w-full h-[100px] lg:p-5 ">
+    <h1
+      class="mx-2 pt-6 tracking-wide text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-400 lg:mx-[90px] ">
+      ElevoHost</h1>
+  </div>
+  <!--page name close-->
+  <!--money,login,reg option start-->
+  <div class="bg-gray-300 h-10">
+    <div class=" flex justify lg:ml-[1025px] lg:mb-2 lg:justify-center lg:flex-none ">
+      <select name="bdt" class=" text-blue-400 h-7 bg-gray-200 mx-3 ">
         <option value="BDT">BDT</option>
-        <option value="USD">USD</option>   
-    </select>
-    <h1 class=" w-3/9 h-7 p-1 mr-2 lg:mr-3 text-center font-serif hover:bg-blue-400 bg-gray-700 text-white text-sm ">LOGIN</h1>
-    <h1 class=" w-12/15 h-7 p-1 mr-2 text-center font-serif hover:bg-blue-400 bg-gray-700 text-white text-sm ">REGISTRATION</h1>
-    <!--money,lohin,reg option close-->
-    <!--Dropdown menu start-->
-    <nav>
-       <div class="max-w-7xl mx-auto flex justify-end items-center ">            
-        <div class="relative group">
-         <!--<button class=" ml-[170px] lg:ml-[190px] w-6 bg-gray-400">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" /> </svg>                      
-          </button> -->
-        <div class="absolute hidden group-focus-within:block  bg-black mt-2  rounded-lg shadow-lg w-full text-center">
-          <a href="#" class="block mr-3 text-white hover:bg-blue-400 py-1 px-4 ml-2 my-2 pr-8 rounded-lg cursor-pointer ">Home</a><div>
-        <div class="bg-black text-white"></div>
-        <div class="space-y-4 w-full">
-      <!-- inside Dropdown 1 -->
-        <div class="relative group-focus-within:block  w-full">
-          <input type="checkbox" id="toggleDropdown1" class="hidden peer">
-          <label for="toggleDropdown1" class="block  border-gray-300 hover:bg-blue-400 text-white py-1 px-4 pr-8 rounded-lg cursor-pointer">
-            Hosting
-        <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 ">
-          <svg class="fill-current h-4 w-4 transition-transform duration-200 peer-checked:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <path d="M7 10l5 5 5-5H7z"/></svg>
-        </div>
-        </label>
-        <div class=" z-10 w-full bg-gray-900 border-2 border-gray-300 mt-1 rounded-lg shadow-lg hidden ">
-          <ul>
-           <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#" >Web Hosting</a></li>
-           <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#" >Turbo Hosting</a></li>
-           <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#" >Corporate Package</a></li>
-           <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#" >Vps</a></li>
-          </ul>
-        </div>
-        </div>                  
-    <!-- Dropdown 2 -->
-        <div class="relative inline-block w-full">
-          <input type="checkbox" id="toggleDropdown2" class="hidden peer">
-          <label for="toggleDropdown2" class="block  border-gray-300 hover:bg-blue-400 text-white py-1 px-4 pr-8 rounded-lg cursor-pointer">
-          Server
-        <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
-          <svg class="fill-current h-4 w-4 transition-transform duration-200 peer-checked:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <path d="M7 10l5 5 5-5H7z"/></svg>
-        </div>
-        </label>
-        <div class="z-10 w-full bg-gray-900 border border-gray-300 mt-1 rounded-lg shadow-lg peer-checked:block absolute hidden  ">
-          <ul>
-            <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#" >Virtual Server</a></li>
-          </ul>
-        </div>
-        </div>
-<!-- Dropdown 3 -->
-        <div class="relative inline-block w-full">
-          <input type="checkbox" id="toggleDropdown3" class="hidden peer">
-          <label for="toggleDropdown3" class="block  border-gray-300 hover:bg-blue-400 text-white py-1 px-4 pr-8 rounded-lg cursor-pointer">
-          Domain
-        <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
-           <svg class="fill-current h-4 w-4 transition-transform duration-200 peer-checked:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-           <path d="M7 10l5 5 5-5H7z"/></svg>
-        </div>
-        </label>
-        <div class="absolute z-10 w-full bg-gray-900 border border-gray-300 mt-1 rounded-lg shadow-lg hidden ">
-          <ul>
-            <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#" >Domain Registration</a></li>
-            <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#" >Domain Transfer</a></li>
-          </ul>
-        </div>
-        </div>
-        </div>
-            <a href="#" class="block ml-2 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">Email Hosting</a>
-            <a href="#" class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">SSL Certificate</a>
-            <a href="#" class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">Affiliates</a>
-            <a href="#" class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">About</a>
-            <a href="#" class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">Live Chat</a>
-        </div>
-        </div>
-        </div>
-        </nav>
-        </div>
-        </div>
-<!--Dropdown Menu close-->
-<!--start and compare section-->
-<div class="bg-gray-800 text-white flex items-end justify-end h-[500px] lg:h-[550px]  lg:container lg:mx-auto lg:flex flex-col lg:flex-row lg:items-center lg:justify-between lg:px-6">
+        <option value="USD">USD</option>
+      </select>
+      <h1 class=" w-3/9 h-7 p-1 mr-2 lg:mr-3 text-center font-serif hover:bg-blue-400 bg-gray-700 text-white text-sm ">
+        LOGIN</h1>
+      <h1 class=" w-12/15 h-7 p-1 mr-2 text-center font-serif hover:bg-blue-400 bg-gray-700 text-white text-sm ">
+        REGISTRATION</h1>
+      <!--money,lohin,reg option close-->
+
+      <!--Dropdown menu start-->
+      <nav>
+        <div class="max-w-7xl mx-auto flex justify-end items-center ">
+          <div class="relative group">
+
+            <button class=" ml-[140px] lg:ml-[190px] w-6 bg-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="black" class="size-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+              </svg>
+            </button>
+
+            <div
+              class="absolute  group-focus-within:block  bg-black mt-2  rounded-lg shadow-lg w-full text-center hidden">
+
+              <a href="#"
+                class=" block mr-3 text-white hover:bg-blue-400 py-1 px-4 ml-2 my-2 pr-8 rounded-lg cursor-pointer ">
+                Home
+              </a>
+
+
+              <div>
+                <div class="space-y-4 w-full">
+
+                  <!-- inside Dropdown 1 -->
+                  <div class="relative group-focus-within:block  w-full">
+                    <input type="checkbox" id="toggleDropdown1" class="hidden peer">
+                    <label for="toggleDropdown1"
+                      class="block  border-gray-300 hover:bg-blue-400 text-white py-1 px-4 pr-8 rounded-lg cursor-pointer">
+                      Hosting
+                      <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 ">
+                        <svg class="fill-current h-4 w-4 transition-transform duration-200 peer-checked:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M7 10l5 5 5-5H7z" />
+                        </svg>
+                      </div>
+                    </label>
+                    <div
+                      class=" z-10 w-full bg-gray-900 border-2 border-gray-300 mt-1 rounded-lg shadow-lg peer-checked:block hidden ">
+                      <ul>
+                        <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#">Web Hosting</a></li>
+                        <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#">Turbo Hosting</a></li>
+                        <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#">Corporate Package</a></li>
+                        <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#">Vps</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Dropdown 2 -->
+                  <div class="relative inline-block w-full">
+                    <input type="checkbox" id="toggleDropdown2" class="hidden peer">
+                    <label for="toggleDropdown2"
+                      class="block  border-gray-300 hover:bg-blue-400 text-white py-1 px-4 pr-8 rounded-lg cursor-pointer">
+                      Server
+                      <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
+                        <svg class="fill-current h-4 w-4 transition-transform duration-200 peer-checked:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M7 10l5 5 5-5H7z" />
+                        </svg>
+                      </div>
+                    </label>
+                    <div
+                      class="z-10 w-full bg-gray-900 border border-gray-300 mt-1 rounded-lg shadow-lg peer-checked:block hidden  ">
+                      <ul>
+                        <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#">Virtual Server</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Dropdown 3 -->
+                  <div class="relative inline-block w-full">
+                    <input type="checkbox" id="toggleDropdown3" class="hidden peer">
+                    <label for="toggleDropdown3"
+                      class="block  border-gray-300 hover:bg-blue-400 text-white py-1 px-4 pr-8 rounded-lg cursor-pointer">
+                      Domain
+                      <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
+                        <svg class="fill-current h-4 w-4 transition-transform duration-200 peer-checked:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M7 10l5 5 5-5H7z" />
+                        </svg>
+                      </div>
+                    </label>
+                    <div
+                      class="z-10 w-full bg-gray-900 border border-gray-300 mt-1 rounded-lg shadow-lg peer-checked:block hidden ">
+                      <ul>
+                        <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#">Domain Registration</a></li>
+                        <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#">Domain Transfer</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <a href="#"
+                  class="block ml-2 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">Email
+                  Hosting</a>
+                <a href="#"
+                  class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">SSL
+                  Certificate</a>
+                <a href="#"
+                  class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">Affiliates</a>
+                <a href="#"
+                  class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">About</a>
+                <a href="#"
+                  class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">Live
+                  Chat</a>
+              </div>
+            </div>
+          </div>
+      </nav>
+    </div>
+  </div>
+  <!--Dropdown Menu close-->
+  <!--start and compare section-->
+  <div
+    class="bg-gray-800 text-white flex items-end justify-end  h-[500px] lg:h-[550px]  lg:container lg:mx-auto lg:flex flex-col lg:flex-row lg:items-center lg:justify-between lg:px-6">
     <div class="text-center">
       <!--1st image-->
-      <img src="ElevoHost (5)[1].png"  alt="picture" class="h-[300px] mx-[90px] pt-[20px] px-5 lg:mx-[600px] lg:"> 
-       <!--1st image close--> 
-       <!--some paragraph start-->
-      <h1 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-500 mb-4">Next Level SSD Hosting Solutions!</h1>
-        <p class="text-xs font-serif mb-8 lg:text-xl lg:mb-6">Experience the next level SSD hosting which built for speed! We utilize solid-state drives(SSD) for our all hosting plans. For Enhanced performance we use LiteSpeed Web Server, HTTP/2, PHP7. We make your website faster, which will help you to increase search ranking!</p>
+      <img src="ElevoHost (5)[1].png" alt="picture" class="h-[300px] mx-[60px] pt-[20px] px-5 lg:mx-[600px] lg:">
+      <!--1st image close-->
+      <!--some paragraph start-->
+      <h1 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-300 mb-6">
+        Next Level SSD Hosting Solutions!</h1>
+      <p class="text-xs font-serif mb-8 lg:text-xl mx-5 lg:mb-6">Experience the next level SSD hosting which built for
+        speed! For Enhanced performance we use LiteSpeed Web Server, HTTP/2, PHP7. We make your website faster, which
+        will help you to increase search ranking!</p>
       <!--some paragraph close-->
-        <!--start and compare section start-->
-        <div class="flex my-4 space-x-4">
-            <button class="bg-green-500 hover:bg-green-700 text-white font-semibold my-4 ml-[125px] py-2 px-4 lg:ml-[650px] rounded">Get Started</button>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold my-4 py-2 px-4 pl-4 rounded">Compare Plans</button>
+      <!--start and compare section start-->
+      <div class="flex my-4 space-x-4">
+        <button
+          class="bg-green-500 hover:bg-green-700 text-white font-semibold my-4 ml-[80px] py-2 px-4 lg:ml-[650px] rounded">Get
+          Started</button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold my-4 py-2 px-4 pl-4 rounded">Compare
+          Plans</button>
+      </div>
+    </div>
+  </div>
+  <!--start and compare section close-->
+  <!--www... start-->
+  <div class="bg-gray-100 p-8 flex justify-center ">
+    <div
+      class="bg-white text-black p-3 rounded-lg shadow-lg mb-2 mx-[70px] w-full lg:w-[585px] lg:h-[225px] h-[200px] hover:bg-gray-200 transition-smooth">
+      <h1 class=" text-gray-700 font-semibold mb-2 text-center ">WWW.</h1>
+      <input type="text" id="domain" placeholder="Type your domain..."
+        class="border border-gray-300 rounded-md p-2 mx-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[330px] lg:w-[550px]">
+      <div class="relative mt-4 rounded-mb">
+        <select id="tld"
+          class="appearance-none bg-white border border-gray-900  ring-1 focus:ring-blue-400 mx-2 w-[330px] lg:w-[550px] ">
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">All</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.com</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.in</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.co.in</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.xyz</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.me</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.org</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.top</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.net</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.info</a></option>
+        </select>
+        <div class="pointer-events-none absolute inset-y-0 right-0 items-center  text-gray-700 ">
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
         </div>
+      </div>
+      <button
+        class="bg-black hover:bg-gray-700 text-white text-center font-bold py- px-10 rounded-md w-[330px] lg:w-[550px] h-10 mt-4 mx-2 flex-items-center justify-center">
+        Search
+      </button>
     </div>
-    </div>
-    <!--start and compare section close-->
-   <!--www... start-->
-   <div class="bg-gray-100 p-8 flex justify-center ">
-    <div class="bg-white text-black p-3 rounded-lg shadow-lg mb-2 mx-[70px] w-[370px] lg:w-[585px] lg:h-[225px] h-[200px] hover:bg-gray-200 transition-smooth">
-       <h1 class=" text-gray-700 font-semibold mb-2 text-center ">WWW.</h1>
-        <input type="text" id="domain" placeholder="Type your domain..." class="border border-gray-300 rounded-md p-2 mx-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[330px] lg:w-[550px]">
-        <div class="relative mt-4 rounded-mb">
-            <select id="tld" class="appearance-none bg-white border border-gray-900  ring-1 focus:ring-blue-400 mx-2 w-[330px] lg:w-[550px] " >
-               <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">All</a></option>
-               <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.com</a></option>
-               <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.in</a></option>  
-               <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.co.in</a></option>
-               <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.xyz</a></option>
-               <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.me</a></option>
-               <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.org</a></option>
-               <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.top</a></option>
-               <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.net</a></option>
-               <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.info</a></option>
-            </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 items-center px-3  text-gray-700 ">
-                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-                </svg>
-            </div>
-        </div>   
-        <button class="bg-black hover:bg-gray-700 text-white text-center font-bold py- px-10 rounded-md w-[330px] lg:w-[550px] h-10 mt-4 mx-2 flex-items-center justify-center">               
-           Search 
-        </button>   
-</div>
-</div>
- <!--www... close-->
-<!--Domain price start-->
-<div class="bg-blue-400 h-[400px] lg:h-[300px] w-full p-4  ">
+  </div>
+  <!--www... close-->
+  <!--Domain price start-->
+  <div class="bg-blue-400 h-[400px] lg:h-[300px] w-full p-4  ">
     <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-white text-center">
-        <div>
-          <img src= "https://www.exonhost.com/img/home-domain-icon-1.png" alt=".com" class="mx-auto pt-7">
-          <p class="text-xl my-1">Only <span class="font-bold">TK999.00/yr</span></p>
-        </div>
-        <div>
-          <img src="https://www.exonhost.com/img/home-domain-icon-2.png" alt=".xyz" class="mx-auto pt-10">
-          <p class="text-xl">Only <span class="font-bold">TK229.00</span></p>
-        </div>
-        <div>
-          <img src="https://www.exonhost.com/img/home-domain-icon-3.png" alt=".me" class="mx-auto mb-4 lg:pt-10">
-          <p class="text-xl">Only <span class="font-bold">TK2326.70</span></p>
-        </div>
-        <div>
-          <img src="https://www.exonhost.com/img/home-domain-icon-4.png" alt=".org" class="mx-auto mb-2">
-          <p class="text-xl">Only <span class="font-bold">TK1550.78</span></p>
-        </div>
-        <div>
-          <img src="https://www.exonhost.com/img/home-domain-icon-5.png" alt=".top" class="mx-auto mb-2">
-          <p class="text-xl">Only <span class="font-bold">TK1293.20</span></p>
-        </div>
-        <div>
-          <img src="https://www.exonhost.com/img/home-domain-icon-6.png" alt=".net" class="mx-auto mb-2">
-          <p class="text-xl">Only <span class="font-bold">TK1650.00</span></p>
-        </div>
+      <div>
+        <img src="https://www.exonhost.com/img/home-domain-icon-1.png" alt=".com" class="mx-auto pt-7">
+        <p class="text-xl my-1">Only <span class="font-bold">TK 999.00/yr</span></p>
+      </div>
+      <div>
+        <img src="https://www.exonhost.com/img/home-domain-icon-2.png" alt=".xyz" class="mx-auto pt-10">
+        <p class="text-xl">Only <span class="font-bold">TK 250.00/yr</span></p>
+      </div>
+      <div>
+        <img src="https://www.exonhost.com/img/home-domain-icon-3.png" alt=".me" class="mx-auto mb-4 lg:pt-10">
+        <p class="text-xl">Only <span class="font-bold">TK 1323.00/yr</span></p>
+      </div>
+      <div>
+        <img src="https://www.exonhost.com/img/home-domain-icon-4.png" alt=".org" class="mx-auto mb-2">
+        <p class="text-xl">Only <span class="font-bold">TK 1074.00/yr</span></p>
+      </div>
+      <div>
+        <img src="https://www.exonhost.com/img/home-domain-icon-5.png" alt=".top" class="mx-auto mb-2">
+        <p class="text-xl">Only <span class="font-bold">TK 300.00/yr</span></p>
+      </div>
+      <div>
+        <img src="https://www.exonhost.com/img/home-domain-icon-6.png" alt=".net" class="mx-auto mb-2">
+        <p class="text-xl">Only <span class="font-bold">TK 1520.00yr</span></p>
       </div>
     </div>
-</div>
-</div>
-<!--Domain price close-->
-<!--price plans start-->
-<div class="lg:flex lg:justify-between ">
-  <div class="bg-white text-black p-3 rounded-lg shadow-lg mt-8 mx-[70px] w-[370px] h-[490px] hover:bg-gray-200 transition-smooth">
-    <!--image-->
-   <img src="https://static-content.cobbleweb.co.uk/uploads/2018/02/low-fidelity-prototype-icon-e1526573337292.png" class="mx-auto"/>
-    <h1 class=" text-black font-bold font-serif mb-5 mt-5 text-center lg:flex-1 text-lg">Web Hosting</h1>
-    <h2 class="text-center font-serif">Ideal to get started and go on to a more advanced hosting package.</h2>
-    <h1 class="text-center mt-6 text-gray-400">starting at</h1>
-    <h1 class=" text-black font-bold font-serif text-center text-lg">TK 2,910/mo</h1>
-     <div class="relative mt-4  rounded-mb"> 
-         <div class="pointer-events-none absolute inset-y-0 right-0 items-center px-3 text-gray-700 ">    
-         </div>
-     </div>   
-     <button class="bg-black hover:bg-gray-700 text-white text-center font-bold px-10 rounded-md w-[330px] h-10  mx-2 flex-items-center justify-center">               
-        GET STARTED 
-     </button>
- </div>
- <div class="bg-white text-black p-3 rounded-lg shadow-lg mt-8 mx-[70px] w-[370px] h-[460px] lg:flex-1 lg:mr-[600px] hover:bg-gray-200 transition-smooth">
-     <!--image-->
-    <img src="https://cdn-icons-png.flaticon.com/128/5337/5337396.png" class="mx-auto"/>
-     <h1 class=" text-black font-bold font-serif mb-5 mt-5 text-center text-lg">Reseller Hosting</h1>
-     <h2 class="text-center font-serif">Ideal for web master or who want to start web hosting business without any hassle.</h2>
-     <h1 class="text-center mt-6 text-gray-400">starting at</h1>
-     <h1 class=" text-black font-bold font-serif text-center text-lg">TK 2,910/mo</h1>
-      <div class="relative mt-4  rounded-mb"> 
-          <div class="pointer-events-none absolute inset-y-0 right-0 items-center px-3 text-gray-700 ">    
-          </div>
-      </div>   
-      <button class="bg-black hover:bg-gray-700 text-white text-center font-bold py- px-10 rounded-md w-[330px] h-10 mt-4 mx-2 flex-items-center justify-center">               
-         GET STARTED 
-      </button>
+  </div>
+  </div>
+  </div>
+  <!--Domain price close-->
+  <!--price plans start-->
+  <div class="lg:flex lg:justify-between m-8 lg:m-9">
+    <div class=" bg-gray-100 border rounded-lg shadow-lg p-6 ">
+      <!-- Plan Header -->
+      <div class="bg-gray-200 hover:bg-gray-300 lg:w-[300px] p-6 ">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">Starter</h2>
+        <p class="text-gray-600 mb-4">
+          The plan is ideal to get started or for those who have a basic website with minimal resources.
+        </p>
+        <!-- Price and Coupon -->
+        <p class="text-xl text-blue-600 font-bold">TK 299.25<span class="text-sm font-normal">/mo</span></p>
+        <!--<p class="text-green-500 text-sm">25% OFF</p> -->
+        <p class="text-gray-600 text-sm mb-4">Renew at TK 399/mo</p>
+        <!-- Features List -->
+        <div class="mb-4">
+          <h3 class="font-semibold text-gray-700 mb-2">Get the Basics</h3>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>✔ 5 GB NVMe SSD Storage</li>
+            <li>✔ 250 GB Bandwidth</li>
+            <li>✔ 2 Websites</li>
+            <li>✔ FREE SSL Certificates</li>
+            <li>✔ LiteSpeed with LSCache</li>
+            <li>✔ Website Toolkit</li>
+            <li>✔ Advanced Features</li>
+            <li>✔ Security Shield</li>
+          </ul>
+        </div>
+        <!-- CTA Button -->
+        <a href="#" class="block bg-blue-500 hover:bg-blue-600 text-white text-center py-3 rounded-lg font-semibold">Get
+          Started</a>
       </div>
+    </div>
+    <div class=" bg-gray-100 border rounded-lg shadow-lg p-6">
+      <!-- Plan Header -->
+      <div class="bg-gray-200 hover:bg-gray-300 lg:w-[300px] p-6 ">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">Starter</h2>
+        <p class="text-gray-600 mb-4">
+          The plan is ideal to get started or for those who have a basic website with minimal resources.
+        </p>
+        <!-- Price and Coupon -->
+        <p class="text-xl text-blue-600 font-bold">TK 299.25<span class="text-sm font-normal">/mo</span></p>
+        <!--<p class="text-green-500 text-sm">25% OFF</p> -->
+        <p class="text-gray-600 text-sm mb-4">Renew at TK 399/mo</p>
+        <!-- Features List -->
+        <div class="mb-4">
+          <h3 class="font-semibold text-gray-700 mb-2">Get the Basics</h3>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>✔ 5 GB NVMe SSD Storage</li>
+            <li>✔ 250 GB Bandwidth</li>
+            <li>✔ 2 Websites</li>
+            <li>✔ FREE SSL Certificates</li>
+            <li>✔ LiteSpeed with LSCache</li>
+            <li>✔ Website Toolkit</li>
+            <li>✔ Advanced Features</li>
+            <li>✔ Security Shield</li>
+          </ul>
+        </div>
+
+        <!-- CTA Button -->
+        <a href="#" class="block bg-blue-500 hover:bg-blue-600 text-white text-center py-3 rounded-lg font-semibold">Get
+          Started</a>
+      </div>
+    </div>
+    <div class=" bg-gray-100 border rounded-lg shadow-lg p-6">
+
+      <div class="bg-gray-200 hover:bg-gray-300 lg:w-[300px] p-6 ">
+        <!-- Plan Header -->
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">Starter</h2>
+        <p class="text-gray-600 mb-4">
+          The plan is ideal to get started or for those who have a basic website with minimal resources.
+        </p>
+        <!-- Price and Coupon -->
+        <p class="text-xl text-blue-600 font-bold">TK 299.25<span class="text-sm font-normal">/mo</span></p>
+        <!--<p class="text-green-500 text-sm">25% OFF</p> -->
+        <p class="text-gray-600 text-sm mb-4">Renew at TK 399/mo</p>
+        <!-- Features List -->
+        <div class="mb-4">
+          <h3 class="font-semibold text-gray-700 mb-2">Get the Basics</h3>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>✔ 5 GB NVMe SSD Storage</li>
+            <li>✔ 250 GB Bandwidth</li>
+            <li>✔ 2 Websites</li>
+            <li>✔ FREE SSL Certificates</li>
+            <li>✔ LiteSpeed with LSCache</li>
+            <li>✔ Website Toolkit</li>
+            <li>✔ Advanced Features</li>
+            <li>✔ Security Shield</li>
+          </ul>
+        </div>
+        <!-- CTA Button -->
+        <a href="#" class="block bg-blue-500 hover:bg-blue-600 text-white text-center py-3 rounded-lg font-semibold">Get
+          Started</a>
+      </div>
+    </div>
   </div>
-  <div class="bg-white text-black p-3 rounded-lg shadow-lg mt-8 mb-8 lg:flex-1  mx-[70px] w-[370px] h-[450px] hover:bg-gray-200 transition-smooth">
-     <!--image-->
-    <img src="https://convergencemedia.boe.com.cn/png/RPqj0ty327UsNLQcmPVlLZHaB2wz1t.png" class="mx-auto"/>
-     <h1 class=" text-black font-bold font-serif mb-2 mt-3 text-center text-lg">Virtual Servers</h1>
-     <h2 class="text-center font-serif">Get started with a VPS or enjoy the flexibility of our SSD VPS solutions</h2>
-     <h1 class="text-center mt-5 text-gray-400">starting at</h1>
-     <h1 class=" text-black font-bold font-serif text-center text-lg">TK 2,291/mo</h1>
-      <div class="relative mt-4  rounded-mb"> 
-          <div class="pointer-events-none absolute inset-y-0 right-0 items-center px-3 text-gray-700 ">    
-          </div>
-      </div>   
-      <button class="bg-black hover:bg-gray-700 text-white text-center font-bold py- px-10 rounded-md w-[330px] h-10 mt-4 mx-2 flex-items-center justify-center">               
-         GET STARTED 
-      </button>
   </div>
-</div>
-</div>
-</div>
+  </div>
   <!--price plans close-->
   <!--control panle start-->
   <div class="bg-gray-200 h-[1200px] w-full ">
     <h1 class=" mt-3 py-3 text-4xl text-center font-semibold font-serif ">User Friendly Control Panel</h1>
-        <h1 class="text-center mx-3 font-serif">cPanel help you to manage a web hosting account with maximum efficiency.</h1>   
-       <img src="https://www.exonhost.com/img/home-control-icon-1.png" class="mx-auto mt-10"/>
-        <h1 class="text-center font-serif font-bold lg:text-xl"> One-Click Deploy</h1>
-        <p class="font-serif text-center font-xs lg:text-xl mx-4 my-3 ">With our one click installer tool, available on every Web Hosting plan, you can create any type of website: blog, photo gallery, and so much more!</p>
-        
-        <img src="https://www.exonhost.com/img/home-control-icon-2.png" class="mx-auto mt-10"/>
-        <h1 class="text-center font-serif font-bold lg:text-xl"> Terminal Access</h1>
-        <p class="font-serif text-center lg:text-xl font-xs mx-4 my-3 ">The Terminal interface allows you to access an in-browser terminal application for direct command-line access within a cPanel.</p>
-        
-        <img src="https://www.exonhost.com/img/home-control-icon-3.png" class="mx-auto mt-10"/>
-        <h1 class="text-center font-serif font-bold lg:text-xl"> Easy management</h1>
-        <p class="font-serif text-center font-xs mx-4 my-3 lg:text-xl"> ExonHost Panel is extremely user-friendly and can be used by those with little experience in website development.</p>
-        <img src="https://www.exonhost.com/img/cpanel.png" class="my-10 w-full lg:w-[1000px] lg:mx-[270px] lg:h-[500px]"/>
-    </div>
-</div>
- <!--control panle close-->
+    <h1 class="text-center mx-3 font-serif">cPanel help you to manage a web hosting account with maximum efficiency.
+    </h1>
+    <img src="https://www.exonhost.com/img/home-control-icon-1.png" class="mx-auto mt-10" />
+    <h1 class="text-center font-serif font-bold lg:text-xl"> One-Click Deploy</h1>
+    <p class="font-serif text-center font-xs lg:text-xl mx-4 my-3 ">With our one click installer tool, available on
+      every Web Hosting plan, you can create any type of website: blog, photo gallery, and so much more!</p>
+
+    <img src="https://www.exonhost.com/img/home-control-icon-2.png" class="mx-auto mt-10" />
+    <h1 class="text-center font-serif font-bold lg:text-xl"> Terminal Access</h1>
+    <p class="font-serif text-center lg:text-xl font-xs mx-4 my-3 ">The Terminal interface allows you to access an
+      in-browser terminal application for direct command-line access within a cPanel.</p>
+
+    <img src="https://www.exonhost.com/img/home-control-icon-3.png" class="mx-auto mt-10" />
+    <h1 class="text-center font-serif font-bold lg:text-xl"> Easy management</h1>
+    <p class="font-serif text-center font-xs mx-4 my-3 lg:text-xl"> ExonHost Panel is extremely user-friendly and can be
+      used by those with little experience in website development.</p>
+    <img src="https://www.exonhost.com/img/cpanel.png" class="my-10 w-full lg:w-[1000px] lg:mx-[270px] lg:h-[500px]" />
+  </div>
+  </div>
+  <!--control panle close-->
   <!--solution panle start-->
-<div class="bg-gray-200 h-[1300px] lg:h-[1100px] w-full flex flex-col ">
-  <h1 class=" mt-3 py-3 text-4xl text-center font-semibold font-serif">Powerful Web Hosting Solution</h1>
-      <h1 class="text-center mx-3 font-serif">Our clients love us because we listen to their needs.</h1>   
-     <img src="https://me-en.store.asus.com/media/.renditions/catalog/category/eShop-icons-01.png" class="mx-auto mt-10"/>
-      <h1 class="text-center font-serif font-bold my-3 lg:text-2xl"> High Performance SSD Servers</h1>
-      <p class="font-serif text-center font-xs mx-4 my-3 lg:text-lg">We use only top of the line server hardware, and this reflects in the quality service that we provide.</p>
-      
-      <img src="https://th.bing.com/th/id/R.ca23c6ae551490766bea3353e84f9344?rik=d9lgPpJ9nqRoRw&riu=http%3a%2f%2fwww.prolectric.us%2fwp-content%2fuploads%2f2020%2f06%2f400dpiLogo-2.png&ehk=gfwVrOz9CQTL7WUjVUdTko%2byJZ1a616xNS0n0OB2x6Y%3d&risl=&pid=ImgRaw&r=0" class="mx-auto mt-10"/>
-      <h1 class="text-center font-serif  lg:text-2xl font-bold"> LiteSpeed Web Server</h1>
-      <p class="font-serif text-center font-xs mx-4 my-3 lg:text-lg ">Speed matters! Web Hosting with LiteSpeed Web Server experience creates a captive audience of satisfied users and higher search engine rankings.</p>
-      
-      <img src="https://fk.sikale.com/wp-content/uploads/2021/01/2021013009273053.png" class="mx-auto "/>
-      <h1 class="text-center font-serif font-bold lg:text-2xl "> Rock-Solid Security</h1>
-      <p class="font-serif text-center font-xs mx-4 my-3 lg:text-lg">Protect your site against constant threats we are using custom web application firewall rules. Combined with real-time 24/7 server monitoring.</p>
+  <div class="bg-gray-200 h-[1300px] lg:h-[1100px] w-full flex flex-col ">
+    <h1 class=" mt-3 py-3 text-4xl text-center font-semibold font-serif">Powerful Web Hosting Solution</h1>
+    <h1 class="text-center mx-3 font-serif">Our clients love us because we listen to their needs.</h1>
+    <img src="https://me-en.store.asus.com/media/.renditions/catalog/category/eShop-icons-01.png"
+      class="mx-auto mt-10" />
+    <h1 class="text-center font-serif font-bold my-3 lg:text-2xl"> High Performance SSD Servers</h1>
+    <p class="font-serif text-center font-xs mx-4 my-3 lg:text-lg">We use only top of the line server hardware, and this
+      reflects in the quality service that we provide.</p>
+
+    <img
+      src="https://th.bing.com/th/id/R.ca23c6ae551490766bea3353e84f9344?rik=d9lgPpJ9nqRoRw&riu=http%3a%2f%2fwww.prolectric.us%2fwp-content%2fuploads%2f2020%2f06%2f400dpiLogo-2.png&ehk=gfwVrOz9CQTL7WUjVUdTko%2byJZ1a616xNS0n0OB2x6Y%3d&risl=&pid=ImgRaw&r=0"
+      class="mx-auto mt-10" />
+    <h1 class="text-center font-serif  lg:text-2xl font-bold"> LiteSpeed Web Server</h1>
+    <p class="font-serif text-center font-xs mx-4 my-3 lg:text-lg ">Speed matters! Web Hosting with LiteSpeed Web Server
+      experience creates a captive audience of satisfied users and higher search engine rankings.</p>
+
+    <img src="https://fk.sikale.com/wp-content/uploads/2021/01/2021013009273053.png" class="mx-auto " />
+    <h1 class="text-center font-serif font-bold lg:text-2xl "> Rock-Solid Security</h1>
+    <p class="font-serif text-center font-xs mx-4 my-3 lg:text-lg">Protect your site against constant threats we are
+      using custom web application firewall rules. Combined with real-time 24/7 server monitoring.</p>
   </div>
-</div>
-<!--solution panle close-->
-<!--help panle start-->
-<div class="bg-gray-900 text-white flex justify-items-center justify-end h-[450px] lg:h-[300px]  ">   
+  </div>
+  <!--solution panle close-->
+  <!--help panle start-->
+  <div class="bg-gray-900 text-white flex justify-items-center justify-end h-[450px] lg:h-[300px]  ">
     <div class="text-center">
-        <img src="https://equitelpower.com/wp-content/uploads/2022/09/servicicn3.png" class="mx-auto lg:px-[700px] "/>
-        <h1 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-500 mb-4">Need Help for Deciding or Looking help for technical issue?</h1>
-        <p class="text-xs mb-8">Talk to one of our hosting specialist who will review your needs and propose a tailored hosting solution.</p>
-        <div class="flex space-x-4">
-            <button class="bg-green-500 hover:bg-green-700 text-white font-semibold my-4 ml-[100px] py-2 px-4 lg:ml-[575px] rounded">SUPPORT DESK</button>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold my-4 py-2 px-4 rounded">ONELINE LIVE CHAT</button>
-        </div>
-        </div>
-    </div>
-    <!--help panle close-->  
-    <!--special panle start-->    
-      <div class="bg-blue-100 h-[1100px] lg:h-[900px] w-full p-3  ">
-        <h1 class=" mt-5 my-5   text-4xl text-center font-semibold font-serif">What Makes ElevoHost Special?</h1>
-            <h1 class="text-center mx-3  font-serif">We Have the Features & Service You Deserve!</h1> 
-
-           <img src="https://www.exonhost.com/img/different-exonhost-box-1.png" class="mx-auto mt-10"/>
-            <h1 class="text-center font-serif font-bold lg:text-lg my-2"> 99.9% Uptime Gurarantee</h1>
-            <p class="font-serif text-center font-xs mx-4 my-3 ">We understand the uptime importance. We pledge to deliver in excess of 99.9% uptime, each and every month.</p>
-            
-            <img src="https://www.exonhost.com/img/different-exonhost-box-2.png" class="mx-auto mt-10"/>
-            <h1 class="text-center font-serif lg:text-lg font-bold my-2"> 30 Days Money-back gurarantee</h1>
-            <p class="font-serif text-center font-xs mx-4 my-3 ">We have 30 Days moneyback guarantee, so you can try our service without any risk. We'll refund you if you're not satisfied.</p>
-            
-            <img src="https://www.exonhost.com/img/different-exonhost-box-3.png" class="mx-auto mt-10"/>
-            <h1 class="text-center font-serif lg:text-lg font-bold my-2"> Free 24/7 Professional Support</h1>
-            <p class="font-serif text-center font-xs mx-4 my-3 "> Our customer support is 24x7x365. With your hosting package you also gain 24x7 accesses to our expert support team</p>
-           
-            <img src="https://www.exonhost.com/img/different-exonhost-box-4.png" class="mx-auto mt-10"/>
-            <h1 class="text-center font-serif lg:text-lg font-bold my-2">Free SSL Certificate </h1>
-            <p class="font-serif text-center font-xs mx-4 my-3 ">We are offering Unlimited SSL for Free. Easy to install/auto-renewed Let's Encrypt SSL certificates can help secure your websites. </p>
-        </div>
-    </div>
-     <!--special panle close--> 
-      <!--author panle start--> 
-    <div class="bg-gray-100 py-6 lg:grid-cols-6 px-4 ">
-        <div class="max-w-4xl mx-auto text-center">
-          <h1 class="text-blue-500 text-5xl md:text-5xl font-bold">20000+ </h1>
-          <h1 class="text-blue-500 text-4xl md:text-5xl font-bold">customers rely on us</h1>
-          <p class="mt-4 text-gray-500 mx-3">
-            We hosted more than 20000 happy customers. Small website to high traffic website customers.</p>
-          <!-- Button -->
-          <div class="mt-6">
-            <button class="bg-gray-800 hover:bg-blue-500 text-white py-4 px-6 my-5 font-semibold rounded-full">
-              WHAT THEY HAVE TO SAY
-            </button>
-          </div>
-          <div class=" justify-between mx-[95px] ">
-            <!-- Card 1 -->
-            <div class="flex-none w-80 my-7 bg-gray-300  hover:bg-blue-400 rounded-lg shadow-md p-6 scroll-snap-align-start">
-              <p class="text-gray-700 text-lg mb-4">
-                I have been using ExonHost since 2024. We are providing excellent service!
-              </p>
-              <div class="flex items-center">
-                <img src="" alt="Author 1" class="w-12 h-12 rounded-full mr-4">
-                <div>
-                  <p class="font-semibold text-lg text-center">name 1</p>
-                  <p class="text-blue-600">position</p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="flex-none w-80 my-7 bg-gray-300  hover:bg-blue-400 rounded-lg shadow-md p-6 scroll-snap-align-start">
-              <p class="text-gray-700 text-lg mb-4">
-                EvloHost's service has been outstanding. Their support team is very responsive, and the hosting plans fit our needs perfectly!
-              </p>
-              <div class="flex items-center">
-                <img src="" alt="Author 2" class="w-12 h-12 rounded-full mr-4">
-                <div>
-                  <p class="font-semibold text-lg">name 2</p>
-                  <p class="text-blue-600">position</p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="flex-none w-80 my-7 bg-gray-300 hover:bg-blue-400 rounded-lg shadow-md p-6 scroll-snap-align-start">
-              <p class="text-gray-700 text-lg mb-4">
-                We moved our high-traffic website to ExonHost and couldn't be happier. Their uptime and performance are second to none.
-              </p>
-              <div class="flex items-center">
-                <img src="" alt="Author 3" class="w-12 h-12 rounded-full mr-4">
-                <div>
-                  <p class="font-semibold text-lg">name 3</p>
-                  <p class="text-blue-600">position</p>
-                </div>
-                </div>
-                </div>
-                 <!-- Card 3 -->
-                <div class="flex-none w-80 my-7 bg-gray-300 hover:bg-blue-400 rounded-lg shadow-md p-6 scroll-snap-align-start">
-                  <p class="text-gray-700 text-lg mb-4">
-                    We moved our high-traffic website to ExonHost and couldn't be happier. Their uptime and performance are second to none.
-                  </p>
-                  <div class="flex items-center">
-                    <img src="" alt="Author 3" class="w-12 h-12 rounded-full mr-4">
-                    <div>
-                      <p class="font-semibold text-lg">name 4</p>
-                      <p class="text-blue-600">position</p>
-          </div>
-          </div>
-        </div>
-        <div class="flex-none w-80 my-7 bg-gray-300 hover:bg-blue-400 rounded-lg shadow-md p-6 scroll-snap-align-start">
-          <p class="text-gray-700 text-lg mb-4">
-            We moved our high-traffic website to ExonHost and couldn't be happier. Their uptime and performance are second to none.
-          </p>
-          <div class="flex items-center">
-            <img src="" alt="Author 3" class="w-12 h-12 rounded-full mr-4">
-            <div>
-              <p class="font-semibold text-lg">name 5</p>
-              <p class="text-blue-600">position</p>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-      <!--author panel close-->
-       <!--communication panel close-->
-        <div class="bg-blue-100 h-[450px] w-full mt-5 p-3 lg:p-0" >
-          <h2 class="text-4xl mt-4 text-center font-serif font-bold lg:p-5 ">Not sure where to <p> Start? </p></h2>
-          <p class="text-center lg:mx-[450px] text-sm font-serif max-w-xl mt-5 mb-8">
-            Talk to one of our hosting specialists who will review your needs and propose a tailored hosting solution that will match your specific business reality and needs.</p>
-        <div class="grid grid-cols-2 gap-4 w-full max-w-md mx-4 lg:mx-[540px]">
-        <div class="flex items-center justify-center bg-blue-500 p-4 rounded-lg hover:bg-blue-600 transition duration-300">
-        <div class="flex flex-col items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24" stroke="white"> fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-          </svg>                    
-          <span class="font-semibold text-white">Sales Live Chat</span>
-        </div>
-        </div>
-        <div class="flex items-center justify-center bg-yellow-500 p-4 rounded-lg hover:bg-yellow-600 transition duration-300">
-        <div class="flex flex-col items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
-          </svg>                   
-          <span class="font-semibold text-white">Support Tickets</span>
-        </div>
-        </div>
-        <div class="flex items-center justify-center bg-green-500 p-4 rounded-lg hover:bg-green-600 transition duration-300">
-        <div class="flex flex-col items-center">
-          <svg xmlns="http://www.w3.org/2000/svg"  class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
-          </svg>                    
-          <span class="font-semibold text-white">Call Us Now</span>
-        </div>
-        </div>
-        <div class="flex items-center justify-center bg-pink-500 p-4 rounded-lg hover:bg-pink-600 transition duration-300">
-        <div class="flex flex-col items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
-          </svg>
-          <span class="font-semibold text-white">Send Email</span>
-        </div>
-        </div>
-        </div> 
-        </div>
-        <!--communication panel close-->
-    </body>
-    <footer class="bg-gray-900 text-white pt-8 ">
-      <div class="max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 px-4">
-        <!-- Hosting Section -->
-        <div class="mx-[40px]">
-          <h3 class="font-semibold text-lg mb-4">Hosting</h3>
-          <ul>
-            <li><a href="#" class="text-gray-400 hover:text-white">Web Hosting</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Turbo Hosting</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Reseller Hosting</a></li>
-          </ul>
-        </div>
-    
-        <!-- Server Section -->
-        <div class="mx-[50px]">
-          <h3 class="font-semibold text-lg mb-4">Server</h3>
-          <ul>
-            <li><a href="#" class="text-gray-400 hover:text-white">Virtual Server</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Dedicated Server</a></li>
-          </ul>
-        </div>
-    
-        <!-- Domain Section -->
-        <div class="mx-[40px]">
-          <h3 class="font-semibold text-lg mb-4">Domain</h3>
-          <ul>
-            <li><a href="#" class="text-gray-400 hover:text-white">Domain Registration</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Domain Transfer</a></li>
-          </ul>
-        </div>
-    
-        <!-- Email Hosting Section -->
-        <div  class="mx-[50px]">
-          <h3 class="font-semibold text-lg mb-4 ">Email Hosting</h3>
-          <ul>
-            <li><a href="#" class="text-gray-400 hover:text-white">Business Email</a></li>
-          </ul>
-        </div>
-    
-        <!-- Company Section -->
-        <div  class="mx-[40px]">
-          <h3 class="font-semibold text-lg mb-4">Company</h3>
-          <ul>
-            <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Our Datacenters</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Our Blog</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
-          </ul>
-        </div>
-    
-        <!-- Help Section -->
-        <div class="mx-[50px]">
-          <h3 class="font-semibold text-lg mb-4">Help</h3>
-          <ul>
-            <li><a href="#" class="text-gray-400 hover:text-white">Knowledgebase</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Service Status</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Support Center</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Bank Payment Details</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer> 
-    <!-- Address Section -->
-    <footer class="text-center mb-8 bg-gray-900 text-white py-[60px]">
-      <div>
-      <h3 class="font-semibold text-lg mb-2">Our Address</h3>
-      <p class="text-gray-400">
-        Sirajganj , Bangladesh
-      </p>
-    </div>
-
-    <!-- Payment Options -->
-    <div class="text-center mb-8">
-      <h3 class="font-semibold text-lg mb-4">Payment Options</h3>
-      <div class="flex justify-center space-x-4">
-        
-        <img src="https://images.seeklogo.com/logo-png/47/1/bkash-logo-png_seeklogo-471379.png?v=1957906329439639832" alt="bKash" class="h-8 w-[60px] m-2">
-        <img src="https://seeklogo.com/images/N/nagad-logo-AA1B37DF1B-seeklogo.com.png" alt="Nagad" class="h-8 m-2">
-        <img src="https://images.seeklogo.com/logo-png/31/1/dutch-bangla-rocket-logo-png_seeklogo-317692.png?v=1957908251508225704" alt="Rocket" class="h-8 w-[50px] m-2 ">
-      </div>
-    </div>
-
-    <!-- Subscribe Newsletter -->
-    <div class="text-center mb-8">
-      <h3 class="font-semibold text-lg mb-4">Subscribe Newsletter</h3>
-      <p class="text-gray-400 mb-4">Subscribe for new offers and updates.</p>
-      <div class="flex justify-center">
-        <input type="email" placeholder="enter your email..." class="p-2 rounded-l-md bg-gray-600 text-white placeholder-gray-200 focus:outline-none">
-        <button class="bg-green-500 text-white p-2 rounded-r-md">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v7.59l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 11.59V4a1 1 0 011-1z" clip-rule="evenodd" />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <!-- Social Media Links -->
-    <div class="text-center mb-8">
-      <h3 class="font-semibold text-lg mb-4">Connect with</h3>
-      <p class="text-gray-400">To get updates follow us on Facebook, Twitter, etc.</p>
-      <div class="flex justify-center space-x-6 mt-4">
-        <a href="#" class="text-white hover:text-gray-400">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54V12h2.54V9.797c0-2.507 1.493-3.89 3.776-3.89 1.095 0 2.24.195 2.24.195v2.48h-1.263c-1.246 0-1.63.773-1.63 1.564V12h2.773l-.444 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-          </svg>
-        </a>
-        <a href="#" class="text-white hover:text-gray-400">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M22.46 6c-.77.35-1.59.58-2.46.69a4.281 4.281 0 001.87-2.36 8.588 8.588 0 01-2.7 1.03 4.292 4.292 0 00-7.33 3.92A12.2 12.2 0 013 5.1a4.3 4.3 0 001.33 5.72 4.282 4.282 0 01-1.94-.54v.06a4.288 4.288 0 003.44 4.2 4.294 4.294 0 01-1.93.07 4.29 4.29 0 004.01 2.98A8.607 8.607 0 013 18.29a12.152 12.152 0 006.56 1.93c7.87 0 12.18-6.52 12.18-12.18 0-.19-.01-.38-.02-.57A8.59 8.59 0 0022.46 6z" />
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- Bottom Section -->
-    <div class="border-t border-gray-700 text-center pt-4">
-      <p class="text-gray-400 hover:text-white">&copy; 2025 ElevoHost. All rights reserved.</p>
-      <div class="mt-2">
-        <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a> | 
-        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+      <img src="https://equitelpower.com/wp-content/uploads/2022/09/servicicn3.png" class="mx-auto lg:px-[700px] " />
+      <h1
+        class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-500 mb-4 mx-3">
+        Need Help for Deciding or Looking help for technical issue?</h1>
+      <p class="text-xs mx-3 mb-8">Talk to one of our hosting specialist who will review your needs and propose a
+        tailored hosting solution.</p>
+      <div class="flex space-x-4">
+        <button
+          class="bg-green-500 hover:bg-green-700 text-white font-semibold my-4 ml-[50px] py-2 px-4 lg:ml-[575px] rounded">SUPPORT
+          DESK</button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold my-4 py-2 px-4 rounded">ONELINE LIVE
+          CHAT</button>
       </div>
     </div>
   </div>
-</div>
-</div>
+  <!--help panle close-->
+  <!--special panle start-->
+  <div class="bg-blue-100 h-[1100px] lg:h-[900px] w-full p-3  ">
+    <h1 class=" mt-5 my-5   text-4xl text-center font-semibold font-serif">What Makes ElevoHost Special?</h1>
+    <h1 class="text-center mx-3  font-serif">We Have the Features & Service You Deserve!</h1>
+
+    <img src="https://www.exonhost.com/img/different-exonhost-box-1.png" class="mx-auto mt-10" />
+    <h1 class="text-center font-serif font-bold lg:text-lg my-2"> 99.9% Uptime Gurarantee</h1>
+    <p class="font-serif text-center font-xs mx-4 my-3 ">We understand the uptime importance. We pledge to deliver in
+      excess of 99.9% uptime, each and every month.</p>
+
+    <img src="https://www.exonhost.com/img/different-exonhost-box-2.png" class="mx-auto mt-10" />
+    <h1 class="text-center font-serif lg:text-lg font-bold my-2"> 30 Days Money-back gurarantee</h1>
+    <p class="font-serif text-center font-xs mx-4 my-3 ">We have 30 Days moneyback guarantee, so you can try our service
+      without any risk. We'll refund you if you're not satisfied.</p>
+
+    <img src="https://www.exonhost.com/img/different-exonhost-box-3.png" class="mx-auto mt-10" />
+    <h1 class="text-center font-serif lg:text-lg font-bold my-2"> Free 24/7 Professional Support</h1>
+    <p class="font-serif text-center font-xs mx-4 my-3 "> Our customer support is 24x7x365. With your hosting package
+      you also gain 24x7 accesses to our expert support team</p>
+
+    <img src="https://www.exonhost.com/img/different-exonhost-box-4.png" class="mx-auto mt-10" />
+    <h1 class="text-center font-serif lg:text-lg font-bold my-2">Free SSL Certificate </h1>
+    <p class="font-serif text-center font-xs mx-4 my-3 ">We are offering Unlimited SSL for Free. Easy to
+      install/auto-renewed Let's Encrypt SSL certificates can help secure your websites. </p>
+  </div>
+  </div>
+  <!--special panle close-->
+  <div class="lg:flex lg:justify-between m-8 lg:m-9">
+    <div class=" bg-gray-100 border rounded-lg shadow-lg p-6 ">
+      <!-- Plan Header -->
+      <div class="bg-gray-200 hover:bg-gray-300 lg:w-[300px] p-6 ">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">Starter</h2>
+        <p class="text-gray-600 mb-4">
+          The plan is ideal to get started or for those who have a basic website with minimal resources.
+        </p>
+        <!-- Price and Coupon -->
+        <p class="text-xl text-blue-600 font-bold">TK 299.25<span class="text-sm font-normal">/mo</span></p>
+        <!--<p class="text-green-500 text-sm">25% OFF</p> -->
+        <p class="text-gray-600 text-sm mb-4">Renew at TK 399/mo</p>
+        <!-- Features List -->
+        <div class="mb-4">
+          <h3 class="font-semibold text-gray-700 mb-2">Get the Basics</h3>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>✔ 5 GB NVMe SSD Storage</li>
+            <li>✔ 250 GB Bandwidth</li>
+            <li>✔ 2 Websites</li>
+            <li>✔ FREE SSL Certificates</li>
+            <li>✔ LiteSpeed with LSCache</li>
+            <li>✔ Website Toolkit</li>
+            <li>✔ Advanced Features</li>
+            <li>✔ Security Shield</li>
+          </ul>
+        </div>
+        <!-- CTA Button -->
+        <a href="#" class="block bg-blue-500 hover:bg-blue-600 text-white text-center py-3 rounded-lg font-semibold">Get
+          Started</a>
+      </div>
+    </div>
+    <div class=" bg-gray-100 border rounded-lg shadow-lg p-6">
+      <!-- Plan Header -->
+      <div class="bg-gray-200 hover:bg-gray-300 lg:w-[300px] p-6 ">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">Starter</h2>
+        <p class="text-gray-600 mb-4">
+          The plan is ideal to get started or for those who have a basic website with minimal resources.</p>
+        <!-- Price and Coupon -->
+        <p class="text-xl text-blue-600 font-bold">TK 299.25<span class="text-sm font-normal">/mo</span></p>
+        <!--<p class="text-green-500 text-sm">25% OFF</p> -->
+        <p class="text-gray-600 text-sm mb-4">Renew at TK 399/mo</p>
+        <!-- Features List -->
+        <div class="mb-4">
+          <h3 class="font-semibold text-gray-700 mb-2">Get the Basics</h3>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>✔ 5 GB NVMe SSD Storage</li>
+            <li>✔ 250 GB Bandwidth</li>
+            <li>✔ 2 Websites</li>
+            <li>✔ FREE SSL Certificates</li>
+            <li>✔ LiteSpeed with LSCache</li>
+            <li>✔ Website Toolkit</li>
+            <li>✔ Advanced Features</li>
+            <li>✔ Security Shield</li>
+          </ul>
+        </div>
+
+        <!-- CTA Button -->
+        <a href="#" class="block bg-blue-500 hover:bg-blue-600 text-white text-center py-3 rounded-lg font-semibold">Get
+          Started</a>
+      </div>
+    </div>
+    <div class=" bg-gray-100 border rounded-lg shadow-lg p-6">
+      <div class="bg-gray-200 hover:bg-gray-300 lg:w-[300px] p-6 ">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">Starter</h2>
+        <p class="text-gray-600 mb-4">
+          The plan is ideal to get started or for those who have a basic website with minimal resources.
+        </p>
+        <p class="text-xl text-blue-600 font-bold">TK 299.25<span class="text-sm font-normal">/mo</span></p>
+
+        <p class="text-gray-600 text-sm mb-4">Renew at TK 399/mo</p>
+
+        <div class="mb-4">
+          <h3 class="font-semibold text-gray-700 mb-2">Get the Basics</h3>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>✔ 5 GB NVMe SSD Storage</li>
+            <li>✔ 250 GB Bandwidth</li>
+            <li>✔ 2 Websites</li>
+            <li>✔ FREE SSL Certificates</li>
+            <li>✔ LiteSpeed with LSCache</li>
+            <li>✔ Website Toolkit</li>
+            <li>✔ Advanced Features</li>
+            <li>✔ Security Shield</li>
+          </ul>
+        </div>
+        <a href="#" class="block bg-blue-500 hover:bg-blue-600 text-white text-center py-3 rounded-lg font-semibold">Get
+          Started</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div>
+    <div class="lg:flex lg:justify-between m-8 lg:mx-[300px] lg:my-[100px]">
+      <div class=" bg-gray-100 border rounded-lg shadow-lg p-6 ">
+        <!-- Plan Header -->
+        <div class="bg-gray-200 hover:bg-gray-300 lg:w-[300px] p-6 ">
+          <h2 class="text-2xl font-bold text-gray-800 mb-2">Starter</h2>
+          <p class="text-gray-600 mb-4">
+            The plan is ideal to get started or for those who have a basic website with minimal resources.
+          </p>
+          <!-- Price and Coupon -->
+          <p class="text-xl text-blue-600 font-bold">TK 299.25<span class="text-sm font-normal">/mo</span></p>
+          <!--<p class="text-green-500 text-sm">25% OFF</p> -->
+          <p class="text-gray-600 text-sm mb-4">Renew at TK 399/mo</p>
+          <!-- Features List -->
+          <div class="mb-4">
+            <h3 class="font-semibold text-gray-700 mb-2">Get the Basics</h3>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>✔ FREE SSL Certificates</li>
+              <li>✔ LiteSpeed with LSCache</li>
+              <li>✔ Website Toolkit</li>
+              <li>✔ Advanced Features</li>
+              <li>✔ Security Shield</li>
+            </ul>
+          </div>
+          <!-- CTA Button -->
+          <a href="#"
+            class="block bg-blue-500 hover:bg-blue-600 text-white text-center py-3 rounded-lg font-semibold">Get
+            Started</a>
+        </div>
+      </div>
+      <div class=" bg-gray-100 border rounded-lg shadow-lg p-6 ">
+        <!-- Plan Header -->
+        <div class="bg-gray-200 hover:bg-gray-300 lg:w-[300px] p-6 ">
+          <h2 class="text-2xl font-bold text-gray-800 mb-2">Starter</h2>
+          <p class="text-gray-600 mb-4">
+            The plan is ideal to get started or for those who have a basic website with minimal resources.
+          </p>
+          <!-- Price and Coupon -->
+          <p class="text-xl text-blue-600 font-bold">TK 299.25<span class="text-sm font-normal">/mo</span></p>
+          <!--<p class="text-green-500 text-sm">25% OFF</p> -->
+          <p class="text-gray-600 text-sm mb-4">Renew at TK 399/mo</p>
+          <!-- Features List -->
+          <div class="mb-4">
+            <h3 class="font-semibold text-gray-700 mb-2">Get the Basics</h3>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>✔ 5 GB NVMe SSD Storage</li>
+              <li>✔ 250 GB Bandwidth</li>
+              <li>✔ 2 Websites</li>
+              <li>✔ FREE SSL Certificates</li>
+              <li>✔ LiteSpeed with LSCache</li>
+              <li>✔ Website Toolkit</li>
+              <li>✔ Advanced Features</li>
+              <li>✔ Security Shield</li>
+            </ul>
+          </div>
+          <!-- CTA Button -->
+          <a href="#"
+            class="block bg-blue-500 hover:bg-blue-600 text-white text-center py-3 rounded-lg font-semibold">Get
+            Started</a>
+        </div>
+      </div>
+    </div>
+    <!--author palen close-->
+    <!--communication panel close-->
+    <div>
+      <div class="bg-blue-100 h-[490px] w-full   lg:pb-[0px]  ">
+        <h2 class="text-4xl mt-4 pt-6 text-center font-serif font-bold lg:p-5 ">Not sure where to <p> Start? </p>
+        </h2>
+        <p class="text-center lg:mx-[450px] text-sm font-serif max-w-xl mt-5 mb-8">
+          Talk to one of our hosting specialists who will review your needs and propose a tailored hosting solution that
+          will match your specific business reality and needs.</p>
+        <div class="grid grid-cols-2 gap-4 w-[350px] mx-10 lg:mx-[375px] lg:w-[700px] lg:h-[200px] lg:mb-[47px] ">
+          <div
+            class="flex items-center justify-center bg-blue-500 p-4 rounded-lg hover:bg-blue-600 transition duration-300">
+            <div class="flex flex-col items-center ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2 lg:h-4 lg:w-4" fill="none" viewBox="0 0 24 24"
+                stroke="white"> fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+              </svg>
+              <span class="font-semibold text-white">Sales Live Chat</span>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center bg-yellow-500 p-4 rounded-lg hover:bg-yellow-600 transition duration-300">
+            <div class="flex flex-col items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="white" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+              </svg>
+              <span class="font-semibold text-white">Support Tickets</span>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center bg-green-500 p-4 rounded-lg hover:bg-green-600 transition duration-300">
+            <div class="flex flex-col items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="white" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+              </svg>
+              <span class="font-semibold text-white">Call Us Now</span>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center bg-pink-500 p-4 rounded-lg hover:bg-pink-600 transition duration-300">
+            <div class="flex flex-col items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="white" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+              </svg>
+              <span class="font-semibold text-white">Send Email</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--communication panel close-->
+</body>
+<footer class="bg-gray-900 text-white w-full p-4 ">
+  <div class="lg:flex lg:justify-between">
+    <!-- Hosting Section -->
+    <div class=" text-center">
+      <h3 class="font-semibold text-lg mb-2 mt-10 pt-8 lg:mt-5 lg:mx-[100px]">Hosting</h3>
+      <ul>
+        <li><a href="#" class="text-gray-400 hover:text-white">Web Hosting</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white">Turbo Hosting</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white">Reseller Hosting</a></li>
+      </ul>
+    </div>
+
+    <!-- Server Section -->
+    <div class="mx-[50px] text-center">
+      <h3 class="font-semibold text-lg mb-2 mt-4 lg:mt-5 lg:pt-8">Server</h3>
+      <ul>
+        <li><a href="#" class="text-gray-400 hover:text-white">Virtual Server</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white">Dedicated Server</a></li>
+      </ul>
+    </div>
+
+    <!-- Domain Section -->
+    <div class="mx-[40px] text-center">
+      <h3 class="font-semibold text-lg mb-2 mt-4 lg:pt-8 ">Domain</h3>
+      <ul>
+        <li><a href="#" class="text-gray-400 hover:text-white">Domain Registration</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white">Domain Transfer</a></li>
+      </ul>
+    </div>
+
+    <!-- Email Hosting Section -->
+    <div class="mx-[50px] text-center">
+      <h3 class="font-semibold text-lg mb-2 mt-4 lg:pt-8 ">Email Hosting</h3>
+      <ul>
+        <li><a href="#" class="text-gray-400 hover:text-white">Business Email</a></li>
+      </ul>
+    </div>
+
+    <!-- Company Section -->
+    <div class="mx-[40px] text-center">
+      <h3 class="font-semibold text-lg mb-2 mt-4 lg:pt-8">Company</h3>
+      <ul>
+        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white">Our Datacenters</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white">Our Blog</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Help Section -->
+    <div class="mx-[50px] text-center">
+      <h3 class="font-semibold text-lg mb-2 mt-4 lg:pt-8">Help</h3>
+      <ul>
+        <li><a href="#" class="text-gray-400 hover:text-white">Knowledgebase</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white">Service Status</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white">Support Center</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white">Bank Payment Details</a></li>
+      </ul>
+    </div>
+  </div>
 </footer>
+<!-- Address Section -->
+<footer class="text-center mb-8 bg-gray-900 text-white py-[60px]">
+  <div>
+    <h3 class="font-semibold text-lg mb-2">Our Address</h3>
+    <p class="text-gray-400">
+      Sirajganj , Bangladesh
+    </p>
+  </div>
+
+  <!-- Payment Options -->
+  <div class="text-center mb-8">
+    <h3 class="font-semibold text-lg mb-4">Payment Options</h3>
+    <div class="flex justify-center space-x-4">
+
+      <img src="bkash.png" alt="bKash" class="h-8 w-[60px] m-2">
+      <img src="https://seeklogo.com/images/N/nagad-logo-AA1B37DF1B-seeklogo.com.png" alt="Nagad" class="h-8 m-2">
+      <img src="rokect.png" alt="Rocket" class="h-8 w-[50px] m-2 ">
+    </div>
+  </div>
+
+  <!-- Subscribe Newsletter -->
+  <div class="text-center mb-8">
+    <h3 class="font-semibold text-lg mb-4">Subscribe Newsletter</h3>
+    <p class="text-gray-400 mb-4">Subscribe for new offers and updates.</p>
+    <div class="flex justify-center">
+      <input type="email" placeholder="enter your email..."
+        class="p-2 rounded-l-md bg-gray-600 text-white placeholder-gray-200 focus:outline-none">
+      <button class="bg-green-500 text-white p-2 rounded-r-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M10 3a1 1 0 011 1v7.59l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 11.59V4a1 1 0 011-1z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Social Media Links -->
+  <div class="text-center mb-8">
+    <h3 class="font-semibold text-lg mb-4">Connect with</h3>
+    <p class="text-gray-400">To get updates follow us on Facebook, Twitter, etc.</p>
+    <div class="flex justify-center space-x-6 mt-4">
+      <a href="#" class="text-white hover:text-gray-400">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54V12h2.54V9.797c0-2.507 1.493-3.89 3.776-3.89 1.095 0 2.24.195 2.24.195v2.48h-1.263c-1.246 0-1.63.773-1.63 1.564V12h2.773l-.444 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+        </svg>
+      </a>
+      <a href="#" class="text-white hover:text-gray-400">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M22.46 6c-.77.35-1.59.58-2.46.69a4.281 4.281 0 001.87-2.36 8.588 8.588 0 01-2.7 1.03 4.292 4.292 0 00-7.33 3.92A12.2 12.2 0 013 5.1a4.3 4.3 0 001.33 5.72 4.282 4.282 0 01-1.94-.54v.06a4.288 4.288 0 003.44 4.2 4.294 4.294 0 01-1.93.07 4.29 4.29 0 004.01 2.98A8.607 8.607 0 013 18.29a12.152 12.152 0 006.56 1.93c7.87 0 12.18-6.52 12.18-12.18 0-.19-.01-.38-.02-.57A8.59 8.59 0 0022.46 6z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="border-t border-gray-700 text-center pt-4">
+    <p class="text-gray-400 hover:text-white">&copy; 2025 ElevoHost. All rights reserved.</p>
+    <div class="mt-2">
+      <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a> |
+      <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</footer>
+
 </html>
