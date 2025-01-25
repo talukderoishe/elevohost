@@ -10,6 +10,554 @@
   <script src="index.js"></script>
 </head>
 <body>
-    
+  <div class="bg-gray-300 w-full h-[100px] lg:p-5 ">
+    <h1
+      class="mx-2 pt-6 tracking-wide text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-400 lg:mx-[90px] ">
+      ElevoHost</h1>
+  </div>
+  <!--page name close-->
+  <!--money,login,reg option start-->
+  <div class="bg-gray-300 h-10">
+    <div class=" flex justify lg:ml-[1025px] lg:mb-2 lg:justify-center lg:flex-none ">
+      <select name="bdt" class=" text-blue-400 h-7 bg-gray-200 mx-3 ">
+        <option value="BDT">BDT</option>
+        <option value="USD">USD</option>
+      </select>
+      <h1 class=" w-3/9 h-7 p-1 mr-2 lg:mr-3 text-center font-serif hover:bg-blue-400 bg-gray-700 text-white text-sm ">
+        LOGIN</h1>
+      <h1 class=" w-12/15 h-7 p-1 mr-2 text-center font-serif hover:bg-blue-400 bg-gray-700 text-white text-sm ">
+        REGISTRATION</h1>
+      <!--money,lohin,reg option close-->
+      <!--Dropdown menu start-->
+      <nav>
+        <div class="max-w-7xl mx-auto flex justify-end items-center">
+          <div class="relative">
+            <button id="dropdownButton" class="ml-[140px] lg:ml-[190px]  md:ml-[500px] w-6 bg-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" /></svg>
+            </button>
+            <div id="dropdownMenu" class="absolute bg-black mt-2 rounded-lg shadow-lg w-full text-center hidden">
+              <a href="index.html" class="block mr-3 text-white hover:bg-blue-400 py-1 px-4 ml-2 my-2 pr-8 rounded-lg cursor-pointer">Home</a>
+              <!-- Hosting Menu -->
+              <div>
+                <div class="space-y-4 w-full my-1">
+                  <div class="relative w-full">
+                    <input type="checkbox" id="toggleDropdown1" class="hidden peer">
+                    <label for="toggleDropdown1"
+                      class="block border-gray-300 hover:bg-blue-400 text-white py-1 px-4 pr-8 rounded-lg cursor-pointer">
+                      Hosting
+                      <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 ">
+                        <svg class="fill-current h-4 w-4 transition-transform duration-200 peer-checked:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"> <path d="M7 10l5 5 5-5H7z" /></svg>
+                      </div>
+                    </label>
+                   <div
+                      class="z-10 w-full bg-gray-900 border-2 border-gray-300 mt-1 rounded-lg shadow-lg peer-checked:block hidden">
+                      <ul>
+                        <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="webhosting.html">Web Hosting</a></li>
+                        <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#">Turbo Hosting</a></li>
+                        <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#">Corporate Package</a></li>    
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Dropdown 2 -->
+              <div class="relative inline-block w-full my-1">
+                <input type="checkbox" id="toggleDropdown2" class="hidden peer">
+                <label for="toggleDropdown2"
+                  class="block  border-gray-300 hover:bg-blue-400 text-white py-1 px-4 pr-8 rounded-lg cursor-pointer">
+                  Server
+                  <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
+                    <svg class="fill-current h-4 w-4 transition-transform duration-200 peer-checked:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M7 10l5 5 5-5H7z" />
+                    </svg>
+                  </div>
+                </label>
+                <div
+                  class="z-10 w-full bg-gray-900 border border-gray-300 mt-1 rounded-lg shadow-lg peer-checked:block hidden  ">
+                  <ul>
+                    <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="visual.html">Virtual Server</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Dropdown 3 -->
+              <div class="relative inline-block w-full my-1 text-center">
+                <input type="checkbox" id="toggleDropdown3" class="hidden peer">
+                <label for="toggleDropdown3"
+                  class="block  border-gray-300 hover:bg-blue-400 text-white py-1 px-4 pr-8 rounded-lg cursor-pointer">
+                  Domain
+                  <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
+                    <svg class="fill-current h-4 w-4 transition-transform duration-200 peer-checked:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M7 10l5 5 5-5H7z" />
+                    </svg>
+                  </div>
+                </label>
+                <div
+                  class="z-10 w-full bg-gray-900 border border-gray-300 mt-1 rounded-lg shadow-lg peer-checked:block hidden ">
+                  <ul>
+                    <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="domainRegister.html">Domain Registration</a></li>
+                    <li class="px-4 py-2 text-white hover:bg-blue-400"><a href="#">Domain Transfer</a></li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="block ml-2 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">Email
+                Hosting</a>
+              <a href="#"
+                class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">SSL
+                Certificate</a>
+              <a href="#"
+                class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">Affiliates</a>
+              <a href="#"
+                class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">About</a>
+              <a href="#"
+                class="block ml-3 my-3 text-white hover:bg-blue-400 py-1 px-4 pr-8  rounded-lg cursor-pointer">Live
+                Chat</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <script>
+        const dropdownButton = document.getElementById('dropdownButton');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        // Toggle the visibility of the dropdown menu
+        dropdownButton.addEventListener('click', function () {
+          dropdownMenu.classList.toggle('hidden');
+        });
+
+        // Prevent dropdown from closing when clicking inside the dropdown
+        dropdownMenu.addEventListener('click', function (e) {
+          e.stopPropagation();
+        });
+
+        // Close dropdown if clicked outside
+        window.addEventListener('click', function (e) {
+          if (!dropdownMenu.contains(e.target) && !dropdownButton.contains(e.target)) {
+            dropdownMenu.classList.add('hidden');
+          }
+        });
+      </script>
+
+    </div>
+  </div>
+  <!--Dropdown Menu close-->
+  <!--start and compare section-->
+  <div
+    class="bg-gray-800 text-white flex items-end justify-end  h-[500px] lg:h-[550px]  lg:container lg:mx-auto lg:flex flex-col lg:flex-row lg:items-center lg:justify-between lg:px-6">
+    <div class="text-center">
+      <!--1st image-->
+      <img src="ElevoHost (5)[1].png" alt="picture" class="h-[300px] mx-[60px] pt-[20px] px-5 lg:mx-[600px] lg:">
+      <!--1st image close-->
+      <!--some paragraph start-->
+      <h1 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-300 mb-6">
+        Next Level SSD Hosting Solutions!</h1>
+      <p class="text-xs font-serif mb-8 lg:text-xl mx-5 lg:mb-6">Experience the next level SSD hosting which built for
+        speed! For Enhanced performance we use LiteSpeed Web Server, HTTP/2, PHP7. We make your website faster, which
+        will help you to increase search ranking!</p>
+      <!--some paragraph close-->
+      <!--start and compare section start-->
+      <div class="flex my-4 space-x-4">
+        <button
+          class="bg-green-500 hover:bg-green-700 text-white font-semibold my-4 ml-[80px] py-2 px-4 lg:ml-[650px] rounded">Get
+          Started</button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold my-4 py-2 px-4 pl-4 rounded">Compare
+          Plans</button>
+      </div>
+    </div>
+  </div>
+  <!--start and compare section close-->
+  <!--www... start-->
+  <div class="bg-gray-100 p-8 flex justify-center ">
+    <div
+      class="bg-white text-black p-3 rounded-lg shadow-lg mb-2 mx-[70px] w-full lg:w-[585px] lg:h-[225px] h-[200px] hover:bg-gray-200 transition-smooth">
+      <h1 class=" text-gray-700 font-semibold mb-2 text-center ">WWW.</h1>
+      <input type="text" id="domain" placeholder="Type your domain..."
+        class="border border-gray-300 rounded-md p-2 mx-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[330px] lg:w-[550px]">
+      <div class="relative mt-4 rounded-mb">
+        <select id="tld"
+          class="appearance-none bg-white border border-gray-900  ring-1 focus:ring-blue-400 mx-2 w-[330px] lg:w-[550px] ">
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">All</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.com</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.in</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.co.in</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.xyz</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.me</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.org</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.top</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.net</a></option>
+          <option> <a href="#" class="block px-10 py-4 mx-5 text-white  hover:bg-blue-400">.info</a></option>
+        </select>
+        <div class="pointer-events-none absolute inset-y-0 right-0 items-center  text-gray-700 ">
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
+        </div>
+      </div>
+      <button
+        class="bg-black hover:bg-gray-700 text-white text-center font-bold py- px-10 rounded-md w-[330px] lg:w-[550px] h-10 mt-4 mx-2 flex-items-center justify-center">
+        Search
+      </button>
+    </div>
+  </div>
+  <!--www... close-->
+  <div class="p-6">
+    <div class="mb-4">
+      <ul class="list-none">
+        <li class="flex items-center mb-2">
+          <span class="text-green-500 mr-2">✔</span> Free DNS Management
+        </li>
+        <li class="flex items-center mb-2">
+          <span class="text-green-500 mr-2">✔</span> Free Privacy Protection
+        </li>
+        <li class="flex items-center">
+          <span class="text-green-500 mr-2">✔</span> Domain Theft Protection
+        </li>
+      </ul>
+    </div>
+  
+    <div class="space-y-4">
+      <!-- .com -->
+      <div class="bg-white p-4 shadow rounded-lg text-center">
+        <img src="path-to-com-logo" alt=".com Logo" class="mx-auto mb-2">
+        <p class="text-lg font-bold">TK 1595.00</p>
+      </div>
+  
+      <!-- .xyz (with sale badge) -->
+      <div class="bg-white p-4 shadow rounded-lg text-center relative">
+        <span class="absolute top-0 left-0 bg-red-500 text-white text-xs font-bold px-2 py-1">SALE</span>
+        <img src="path-to-xyz-logo" alt=".xyz Logo" class="mx-auto mb-2">
+        <p class="text-lg font-bold">TK 229.00</p>
+      </div>
+  
+      <!-- .me -->
+      <div class="bg-white p-4 shadow rounded-lg text-center">
+        <img src="path-to-me-logo" alt=".me Logo" class="mx-auto mb-2">
+        <p class="text-lg font-bold">TK 2326.70</p>
+      </div>
+  
+      <!-- .org -->
+      <div class="bg-white p-4 shadow rounded-lg text-center">
+        <img src="path-to-org-logo" alt=".org Logo" class="mx-auto mb-2">
+        <p class="text-lg font-bold">TK 1550.78</p>
+      </div>
+  
+      <!-- .top -->
+      <div class="bg-white p-4 shadow rounded-lg text-center">
+        <img src="path-to-top-logo" alt=".top Logo" class="mx-auto mb-2">
+        <p class="text-lg font-bold">TK 1293.20</p>
+      </div>
+    </div>
+  </div>
+  <div class="p-6 space-y-12">
+
+    <!-- Section 1: Free products and services -->
+    <div class="text-center">
+      <img src="path-to-your-icon" alt="Free Products Icon" class="mx-auto mb-4">
+      <h2 class="text-xl font-bold mb-2">Free products and services when you register</h2>
+      <p class="text-gray-600">Free Privacy protection and Free DNS for life and so much more.</p>
+    </div>
+  
+    <!-- Section 2: Easy set-up and helpful guidance -->
+    <div class="text-center">
+      <img src="path-to-another-icon" alt="Helpful Guidance Icon" class="mx-auto mb-4">
+      <h2 class="text-xl font-bold mb-2">Easy set-up and helpful guidance</h2>
+      <p class="text-gray-600">Use our intuitive Control Panel to manage your domain name and get helpful guidance from our expert.</p>
+    </div>
+  
+    <!-- Section 3: Hundreds of Domains at Great Prices -->
+    <div class="text-center">
+      <h2 class="text-3xl font-bold mb-4">Hundreds Of Domains At Great Prices</h2>
+      <p class="text-gray-600 mb-6">Use our domain price search tool below to find the cost of popular domains.</p>
+  
+      <!-- Search bar -->
+      <div class="relative max-w-md mx-auto">
+        <input type="text" placeholder="search TLDs" class="w-full px-6 py-3 rounded-lg border shadow focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button class="absolute top-0 right-0 h-full px-4 text-blue-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 18l6-6M6 6l6 6" />
+          </svg>
+        </button>
+      </div>
+    </div> 
+  </div>
+  <div class="overflow-x-auto">
+    <table class="table-auto w-full text-left border-collapse">
+        <thead class="text-gray-500">
+            <tr>
+                <th class="px-6 py-3 border-b">TLD</th>
+                <th class="px-6 py-3 border-b">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- .com row -->
+            <tr>
+                <td class="px-6 py-4 border-b text-blue-600 font-semibold">.com</td>
+                <td class="px-6 py-4 border-b">
+                    <span class="inline-flex items-center px-2 py-1 text-sm leading-none bg-gray-200 rounded-full">
+                        <img src="icon-url" alt="Lock Icon" class="w-4 h-4 mr-2"> Secured
+                    </span>
+                </td>
+            </tr>
+            <!-- .xyz row with sale -->
+            <tr>
+                <td class="px-6 py-4 border-b text-blue-600 font-semibold relative">
+                    .xyz
+                    <span class="absolute top-0 left-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">Sale</span>
+                </td>
+                <td class="px-6 py-4 border-b">
+                    <span class="inline-flex items-center px-2 py-1 text-sm leading-none bg-gray-200 rounded-full">
+                        <img src="icon-url" alt="Lock Icon" class="w-4 h-4 mr-2"> Secured
+                    </span>
+                </td>
+            </tr>
+            <!-- Other TLDs rows (.net, .org, .info, etc.) -->
+            <tr>
+                <td class="px-6 py-4 border-b text-blue-600 font-semibold">.net</td>
+                <td class="px-6 py-4 border-b">
+                    <span class="inline-flex items-center px-2 py-1 text-sm leading-none bg-gray-200 rounded-full">
+                        <img src="icon-url" alt="Lock Icon" class="w-4 h-4 mr-2"> Secured
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 border-b text-blue-600 font-semibold">.org</td>
+                <td class="px-6 py-4 border-b">
+                    <span class="inline-flex items-center px-2 py-1 text-sm leading-none bg-gray-200 rounded-full">
+                        <img src="icon-url" alt="Lock Icon" class="w-4 h-4 mr-2"> Secured
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 border-b text-blue-600 font-semibold">.info</td>
+                <td class="px-6 py-4 border-b">
+                    <span class="inline-flex items-center px-2 py-1 text-sm leading-none bg-gray-200 rounded-full">
+                        <img src="icon-url" alt="Lock Icon" class="w-4 h-4 mr-2"> Secured
+                    </span>
+                </td>
+            </tr>
+            <!-- Add more rows for other TLDs as necessary -->
+        </tbody>
+    </table>
+</div>
+<div class="bg-blue-500 text-white p-6 rounded-lg shadow-lg">
+  <h2 class="text-2xl font-bold mb-4">Free Products And Services!</h2>
+  <p class="mb-6">Everybody loves free stuff!</p>
+
+  <div class="flex flex-col space-y-6">
+      <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500 mr-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75" />
+          </svg>
+          <div>
+              <h3 class="text-lg font-semibold mb-1">Free Privacy Protection</h3>
+              <p>Protect your identity from hackers and spammers for free! Our proxy protection replaces your contact information with our contact information.</p>
+          </div>
+      </div>
+
+      <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500 mr-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75" />
+          </svg>
+          <div>
+              <h3 class="text-lg font-semibold mb-1">Free Email Forwarding</h3>
+              <p>Email forwarding is automatically directing email sent from one address to a different email address. It helps you to forward your existing email account.</p>
+          </div>
+      </div>
+
+      <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500 mr-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75" />
+          </svg>
+          <div>
+              <h3 class="text-lg font-semibold mb-1">Free DNS Management</h3>
+              <p>Free lifetime DNS service which allows you to manage your DNS records on our globally distributed and highly redundant DNS infrastructure.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="bg-gray-100 p-6 rounded-lg shadow-md">
+  <h2 class="text-2xl font-bold mb-4">Why Choose ExonHost for your domain?</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 mx-auto mb-4 text-blue-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 4.15c0 .1 0 .2 0 .3v2.25m0 4.15c0 .1 0 .2 0 .3v2.25m0 4.15c0 .1 0 .2 0 .3L12 21" />
+          </svg>
+          <h3 class="text-lg font-semibold mb-2">Easy Domain Management</h3>
+          <p>Use our intuitive Control Panel to manage your domain name, configure email accounts, renew your domain name and buy more services.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 mx-auto mb-4 text-blue-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.75 0a2.25 2.25 0 112.25-2.25V11m6.75 0a2.25 2.25 0 10-2.25-2.25V11m-6.75 0A2.25 2.25 0 1112 11v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <h3 class="text-lg font-semibold mb-2">Easy Set-Up</h3>
+          <p>After purchase, you can head straight to your ExonHost Dashboard and start using your domain. The account panel is uncluttered and easy to use, so you can quickly concentrate on the things that matter.</p>
+      </div>
+  </div>
+</div>
+<div>
+  <div class="bg-blue-100 h-[490px] w-full p-4  lg:pb-[0px]  ">
+    <h2 class="text-4xl mt-4 pt-6 text-center font-serif font-bold lg:p-5 ">Not sure where to <p> Start? </p>
+    </h2>
+    <p class="text-center lg:mx-[450px] text-sm font-serif max-w-xl mt-5 mb-8 md:mx-[100px]">
+      Talk to one of our hosting specialists who will review your needs and propose a tailored hosting solution that
+      will match your specific business reality and needs.</p>
+    <div class="grid grid-cols-2 gap-4 w-[350px] mx-6 lg:mx-[375px] lg:w-[700px] lg:h-[200px] lg:mb-[47px] md:mx-[220px]">
+      <div
+        class="flex items-center justify-center bg-blue-500 p-4 rounded-lg hover:bg-blue-600 transition duration-300">
+        <div class="flex flex-col items-center ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2 lg:h-4 lg:w-4" fill="none" viewBox="0 0 24 24"
+            stroke="white"> fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+          </svg>
+          <span class="font-semibold text-white">Sales Live Chat</span>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center bg-yellow-500 p-4 rounded-lg hover:bg-yellow-600 transition duration-300">
+        <div class="flex flex-col items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="white" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+          </svg>
+          <span class="font-semibold text-white">Support Tickets</span>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center bg-green-500 p-4 rounded-lg hover:bg-green-600 transition duration-300">
+        <div class="flex flex-col items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="white" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+          </svg>
+          <span class="font-semibold text-white">Call Us Now</span>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center bg-pink-500 p-4 rounded-lg hover:bg-pink-600 transition duration-300">
+        <div class="flex flex-col items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="white" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+          </svg>
+          <span class="font-semibold text-white">Send Email</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--communication panel close-->
 </body>
+<footer class="bg-gray-900 text-white w-full p-4 ">
+<div class="lg:flex lg:justify-between">
+<!-- Hosting Section -->
+<div class=" text-center">
+  <h3 class="font-semibold text-lg mb-2 mt-10 pt-8 lg:mt-[9px] lg:mx-[100px]">Hosting</h3>
+  <ul>
+    <li><a href="webhosting.html" class="text-gray-400 hover:text-white">Web Hosting</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-white">Turbo Hosting</a></li>
+  </ul>
+</div>
+<!-- Server Section -->
+<div class="mx-[50px] text-center">
+  <h3 class="font-semibold text-lg mb-2 mt-4 lg:mt-5 lg:pt-6">Server</h3>
+  <ul>
+    <li><a href="#" class="text-gray-400 hover:text-white">Virtual Server</a></li>
+  </ul>
+</div>
+<!-- Domain Section -->
+<div class="mx-[40px] text-center">
+  <h3 class="font-semibold text-lg mb-2 mt-4 lg:pt-6 ">Domain</h3>
+  <ul>
+    <li><a href="#" class="text-gray-400 hover:text-white">Domain Registration</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-white">Domain Transfer</a></li>
+  </ul>
+</div>
+<!-- Email Hosting Section -->
+<div class="mx-[50px] text-center">
+  <h3 class="font-semibold text-lg mb-2 mt-4 lg:pt-6 ">Email Hosting</h3>
+  <ul>
+    <li><a href="#" class="text-gray-400 hover:text-white">Business Email</a></li>
+  </ul>
+</div>
+<!-- Company Section -->
+<div class="mx-[40px] text-center">
+  <h3 class="font-semibold text-lg mb-2 mt-4 lg:pt-6">Company</h3>
+  <ul>
+    <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+  </ul>
+</div>
+<!-- Help Section -->
+<div class="mx-[50px] text-center">
+  <h3 class="font-semibold text-lg mb-2 mt-4 lg:pt-6">Help</h3>
+  <ul>
+    <li><a href="#" class="text-gray-400 hover:text-white">Service Status</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-white">Support Center</a></li>  
+  </ul>
+</div>
+</div>
+</footer>
+<!-- Address Section -->
+<footer class="text-center mb-8 bg-gray-900 text-white py-[60px]">
+<div>
+<h3 class="font-semibold text-lg mb-2">Our Address</h3>
+<p class="text-gray-400">
+  Sirajganj , Bangladesh
+</p>
+</div>
+<!-- Payment Options -->
+<div class="text-center mb-8">
+<h3 class="font-semibold text-lg mb-4">Payment Options</h3>
+<div class="flex justify-center space-x-4">
+
+  <img src="bkash.png" alt="bKash" class="h-8 w-[60px] m-2">
+  <img src="https://seeklogo.com/images/N/nagad-logo-AA1B37DF1B-seeklogo.com.png" alt="Nagad" class="h-8 m-2">
+  <img src="rokect.png" alt="Rocket" class="h-8 w-[50px] m-2 ">
+</div>
+</div>
+<!-- Subscribe Newsletter -->
+<div class="text-center mb-8">
+<h3 class="font-semibold text-lg mb-4">Subscribe Newsletter</h3>
+<p class="text-gray-400 mb-4">Subscribe for new offers and updates.</p>
+<div class="flex justify-center">
+  <input type="email" placeholder="enter your email..."
+    class="p-2 rounded-l-md bg-gray-600 text-white placeholder-gray-200 focus:outline-none">
+  <button class="bg-green-500 text-white p-2 rounded-r-md">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v7.59l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 11.59V4a1 1 0 011-1z" clip-rule="evenodd" /></svg>
+  </button>
+</div>
+</div>
+<!-- Social Media Links -->
+<div class="text-center mb-8">
+<h3 class="font-semibold text-lg mb-4">Connect with</h3>
+<p class="text-gray-400">To get updates follow us on Facebook, Twitter, etc.</p>
+<div class="flex justify-center space-x-6 mt-4">
+  <a href="#" class="text-white hover:text-gray-400">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54V12h2.54V9.797c0-2.507 1.493-3.89 3.776-3.89 1.095 0 2.24.195 2.24.195v2.48h-1.263c-1.246 0-1.63.773-1.63 1.564V12h2.773l-.444 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" /></svg></a>
+  <a href="#" class="text-white hover:text-gray-400">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M22.46 6c-.77.35-1.59.58-2.46.69a4.281 4.281 0 001.87-2.36 8.588 8.588 0 01-2.7 1.03 4.292 4.292 0 00-7.33 3.92A12.2 12.2 0 013 5.1a4.3 4.3 0 001.33 5.72 4.282 4.282 0 01-1.94-.54v.06a4.288 4.288 0 003.44 4.2 4.294 4.294 0 01-1.93.07 4.29 4.29 0 004.01 2.98A8.607 8.607 0 013 18.29a12.152 12.152 0 006.56 1.93c7.87 0 12.18-6.52 12.18-12.18 0-.19-.01-.38-.02-.57A8.59 8.59 0 0022.46 6z" /> </svg> </a>
+</div>
+</div>
+<!-- Bottom Section -->
+<div class="border-t border-gray-700 text-center pt-4">
+<p class="text-gray-400 hover:text-white">&copy; 2025 ElevoHost. All rights reserved.</p>
+<div class="mt-2">
+  <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a> 
+  <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
 </html>
